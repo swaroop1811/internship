@@ -1,0 +1,131 @@
+Task:
+Store multiple students
+Each student has 3 subject marks
+Calculate total & average
+Find topper
+
+  code:-
+    students = [
+    {"name": "Swaroop", "marks": [80, 90, 85]},
+    {"name": "Ravi", "marks": [70, 60, 75]},
+    {"name": "Anil", "marks": [90, 95, 92]}
+]
+
+for student in students:
+    total = sum(student["marks"])
+    average = total / len(student["marks"])
+
+    print("Name:", student["name"])
+    print("Marks:", student["marks"])
+    print("Total:", total)
+    print("Average:", average)
+    print("------")
+
+OUTPUT-
+    Name: Swaroop
+Marks: [80, 90, 85]
+Total: 255
+Average: 85.0
+------
+Name: Ravi
+Marks: [70, 60, 75]
+Total: 205
+Average: 68.33
+------
+Name: Anil
+Marks: [90, 95, 92]
+Total: 277
+Average: 92.33
+------
+
+
+  Task:
+Store multiple students
+Ask user to enter name
+Show marks if found
+
+  code-
+
+  students = {
+    "Swaroop": [80, 90, 85],
+    "Ravi": [70, 60, 75],
+    "Anil": [90, 95, 92]
+}
+
+name = input("Enter student name: ")
+
+if name in students:
+    marks = students[name]
+    print("Marks:", marks)
+    print("Total:", sum(marks))
+    print("Average:", sum(marks)/len(marks))
+else:
+    print("Student not found")
+
+  OUTPUT-
+  Enter student name: Swaroop
+Marks: [80, 90, 85]
+Total: 255
+Average: 85.0
+
+
+  Types of Statements
+  
+Assignment Statement (Used to store values)
+ Conditional Statements (Used for decision making)
+. Loop Statements (Used for repeating code)
+  . Control Statements (Used to control loop flow)
+  Input/Output (Statements Take input and show output)
+
+  students = {}
+
+# Input statement + loop
+for i in range(3):
+    name = input("Enter student name: ")
+    
+    marks = []
+    for j in range(3):
+        m = int(input("Enter marks: "))
+        marks.append(m)
+    
+    students[name] = marks   # assignment
+
+# Processing
+for name in students:
+    total = sum(students[name])
+    avg = total / 3
+
+    print("Name:", name)
+    print("Marks:", students[name])
+    print("Total:", total)
+    print("Average:", avg)
+
+    # Conditional statement
+    if avg >= 90:
+        print("Grade: A")
+    elif avg >= 75:
+        print("Grade: B")
+    elif avg >= 50:
+        print("Grade: C")
+    else:
+        print("Grade: Fail")
+
+    print("------")
+
+  OUTPUT
+Enter student name: Swaroop
+Enter marks: 80
+Enter marks: 90
+Enter marks: 85
+
+Name: Swaroop
+Marks: [80, 90, 85]
+Total: 255
+Average: 85.0
+Grade: B
+  
+  
+
+  
+
+  
