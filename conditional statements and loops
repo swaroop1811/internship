@@ -1,0 +1,148 @@
+Conditional Statements
+
+Conditional statements are used to make decisions in a program.
+
+types:
+
+if
+if-else
+if-elif-else
+
+ Example 
+
+If condition is true → execute block
+Else → execute another block
+
+Example 1: Even or Odd numbers
+for i in range(1, 6):
+    if i % 2 == 0:
+        print(i, "is Even")
+    else:
+        print(i, "is Odd")
+Output:
+1 is Odd
+2 is Even
+3 is Odd
+4 is Even
+5 is Odd
+
+marks = [35, 80, 20, 90, 50]
+
+Example 2: Find pass or fail
+
+for m in marks:
+    if m >= 35:
+        print(m, "Pass")
+    else:
+        print(m, "Fail")
+Output:
+35 Pass
+80 Pass
+20 Fail
+90 Pass
+50 Pass
+
+
+  Example 3
+students = {}
+
+n = int(input("Enter number of students: "))
+
+for i in range(n):
+    name = input("Enter name: ")
+    
+    m1 = int(input("Enter mark 1: "))
+    m2 = int(input("Enter mark 2: "))
+    m3 = int(input("Enter mark 3: "))
+    
+    total = m1 + m2 + m3
+    avg = total / 3
+    
+    if avg >= 35:
+        result = "Pass"
+    else:
+        result = "Fail"
+    
+    students[name] = total   # store only total (simpler)
+
+# Display students
+for name in students:
+    print(name, "Total:", students[name])
+
+# Find topper
+topper = max(students, key=students.get)
+
+print("Topper:", topper, "Marks:", students[topper])
+
+
+otpt
+  Swaroop Total: 240
+Ravi Total: 150
+
+Topper: Swaroop Marks: 240
+
+
+  Definition of Loops
+
+A loop is used to repeat a block of code multiple times until a condition is satisfied.
+
+Instead of writing code again and again, we use loops.
+
+Types of Loops in Python
+for loop
+while loop
+
+
+for loop
+
+
+
+
+
+
+
+
+numbers = [10, 15, 20, 25, 30]
+
+total = 0
+even = 0
+odd = 0
+
+for n in numbers:
+    total += n
+    
+    if n % 2 == 0:
+        even += 1
+    else:
+        odd += 1
+
+print("Total:", total)
+print("Even count:", even)
+print("Odd count:", odd)
+
+
+  while loop
+
+
+
+
+
+
+
+total = 0
+count = 0
+
+while True:
+    mark = int(input("Enter mark (-1 to stop): "))
+    
+    if mark == -1:
+        break
+    
+    total += mark
+    count += 1
+
+if count > 0:
+    avg = total / count
+    print("Average:", avg)
+else:
+    print("No data entered")
