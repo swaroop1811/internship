@@ -1,20 +1,20 @@
 def bank_system():
-    balance = 1000;
+    balance = 1000
 
     print("Initial Balance:", balance)
 
-    deposit = int("Enter deposit amount: "))
+    deposit = int(input("Enter deposit amount: "))
     balance = balance + deposit
 
-    withdraw = int("Enter withdraw amount "))
+    withdraw = int(input("Enter withdraw amount: "))
 
     if withdraw <= balance:
         balance = balance - withdraw
         print("Withdraw successful")
-    else
+    else:
         print("Insufficient balance")
 
-    print("Final Balance:", balance);
+    print("Final Balance:", balance)
 
 
 bank_system()
