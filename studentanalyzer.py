@@ -12,7 +12,7 @@ def student_analyzer():
     for name in marks:
         total = total + students[name]
 
-    avg = total / len(marks)
+    avg = total / len(student)
 
     print("Average Marks:", avg)
 
@@ -22,4 +22,4 @@ def student_analyzer():
             print(marks, ":", students[name])
 
 
-student_analyzer()
+student_analyzer(marks)
