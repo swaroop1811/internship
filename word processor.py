@@ -1,22 +1,21 @@
-def word_processor()
+def word_processor():
     text = input("Enter sentence: ")
 
     vowels = "aeiou"
     count = 0
 
-    for ch in text.lower
-        if ch in vowels
-            count = count + 1
+    for ch in text.lower():
+        if ch in vowels:
+            count += 1
 
-    print("Vowel count:" count)
+    print("Vowel count:", count)
 
+    words = text.split()
 
-    words = text.split
-
-    print("Words with more than 3 letters")
-
+    print("Words with more than 3 letters:")
     for w in words:
-        if len(w) > 3
-            print w
+        if len(w) > 3:
+            print(w)
 
-word_processor
+
+word_processor()
