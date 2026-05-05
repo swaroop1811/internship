@@ -1,6 +1,6 @@
 def student_analyzer():
     students = {
-        "alice": 80,
+        "Aarav": 80,
         "Riya": 90,
         "Kiran": 70,
         "Meena": 85
@@ -8,18 +8,18 @@ def student_analyzer():
 
     total = 0
 
-  
-    for name in marks:
+    # find total
+    for name in students:
         total = total + students[name]
 
-    avg = total / len(student)
+    avg = total / len(students)
 
     print("Average Marks:", avg)
 
-    print("Above Average marks:")
+    print("Above Average Students:")
     for name in students:
-        if students[name] > avg
-            print(marks, ":", students[name])
+        if students[name] > avg:
+            print(name, ":", students[name])
 
 
-student_analyzer(marks)
+student_analyzer()
