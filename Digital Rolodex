@@ -1,0 +1,20 @@
+def people_in_city(people, city_name):
+
+    names = []
+
+    for person in people:
+
+        if person["city"] == city_name:
+
+            names.append(person["Name"])   # mistake
+
+    return names
+
+
+people = [
+    {"name": "Arun", "age": 21, "city": "Chennai"},
+    {"name": "Priya", "age": 22, "city": "Mumbai"},
+    {"name": "Rahul", "age": 20, "city": "Chennai"}
+]
+
+print(people_in_city(people, "Chennai"))
