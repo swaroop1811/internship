@@ -4,10 +4,9 @@ def people_in_city(people, city_name):
 
     for person in people:
 
-        if person["city"] == city_name:
+        if person["city"] == city:   # mistake
 
-            names.append(person["Name"])   # mistake
-
+            names.append(person["Name"])  
     return names
 
 
