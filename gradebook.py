@@ -1,16 +1,11 @@
-def grade_book(student):
-
+def grade_book(students):
     average_marks = {}
 
-    for name, score in student.items():
-
-        avg = sum(score) / len(score)
-
+    for name, scores in students.items():
+        avg = sum(scores) / len(scores)
         average_marks[name] = round(avg, 2)
 
-    return average_mark  
-
-
+    return average_marks
 students = {
     "Arun": [80, 90, 85],
     "Priya": [70, 75, 78],
