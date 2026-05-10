@@ -1,27 +1,26 @@
-import strings
+import string
 
-def word_frequency(text):
+def word_frequency(paragraph):
 
-    text = text.lower
+    paragraph = paragraph.lower()
 
-    for ch in string.punctuation
-        text = text.replace(ch, "")
+    for ch in string.punctuation:
+        paragraph = paragraph.replace(ch, "")
 
-    words = text.split(" ")
+    words = paragraph.split()
 
-    frequency = []
+    frequency = {}
 
-    for word in words
+    for word in words:
 
-        if words in frequency:
-            frequency[word] =+ 1
+        if word in frequency:
+            frequency[word] = frequency[word] + 1
 
-        else
-            frequency[word] = 0
-
+        else:
+            frequency[word] = 0  
     return frequency
 
 
-paragraph = "Python is easy. Python is useful!"
+text = "Python is easy. Python is powerful, and Python is useful!"
 
-print(word_frequency(paragraph))
+print(word_frequency(text))
