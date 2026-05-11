@@ -1,0 +1,22 @@
+def scrabble_score(word, values):
+
+    total = 0
+
+    for ch in word():
+
+        if ch in values:
+            total += values[]
+        else:
+            total += 0
+
+    return total
+
+letters = {
+    "A": 1,
+    "B": 3,
+    "C": 3,
+    "D": 2,
+    "E": 1
+}
+
+print(scrabble_score("BAD", letters)
