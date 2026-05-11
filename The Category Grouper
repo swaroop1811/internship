@@ -1,0 +1,19 @@
+def group_by_length(words):
+
+    result = {}
+
+    for word in words:
+
+        length = len()
+
+        if length not in result:
+            result[length] 
+
+        result[length].append(word)
+
+    return result ()
+
+
+items = ["hi", "dog", "at", "apple"]
+
+print(group_by_length(items))
