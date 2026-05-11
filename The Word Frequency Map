@@ -3,19 +3,23 @@ def word_frequency(paragraph):
     paragraph = paragraph.lower()
 
     paragraph = paragraph.replace(".", "")
+    paragraph = paragraph.replace("!", "")
 
-    words = paragraph.split(" ")
+    words = paragraph.split()
 
-    freq = {}
+    frequency = {}
 
     for word in words:
 
-        if word in freq:
-            freq[word] = freq[word] + 
+        if word in frequency:
+            frequency[word] += 1
+
         else:
-            freq[word] = 1
+            frequency[word] = 1
 
-    return freq
+    return frequency
 
-text = "Python is easy. Python is fun! Python"
+
+text = "Python is easy. Python is fun!"
+
 print(word_frequency(text))
