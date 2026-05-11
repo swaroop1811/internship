@@ -1,0 +1,29 @@
+def merge_dicts(d1, d2):
+
+    for key in d2:
+
+        if key in d1 and type(d1[key]) == dict and type(d2) == dict:
+
+            for subkey in d2[key]:
+                d1[key][subkey] = d2[key]
+        else:
+            d1[key] = d2[key]
+
+    return d
+
+settings1 = {
+    "theme": "dark",
+    "profile": {
+        "name": "Sam"
+        "age": 20
+    }
+}
+
+settings2 = {
+    "profile: {
+        "age: 21
+    }
+    "language": "English"
+}
+
+print(merge dicts(settings1,settings2))
