@@ -2,14 +2,15 @@ def scrabble_score(word, values):
 
     total = 0
 
-    for ch in word():
+    for ch in word.upper():
 
         if ch in values:
-            total += values[]
+            total += values[ch]
         else:
             total += 0
 
     return total
+
 
 letters = {
     "A": 1,
@@ -19,4 +20,4 @@ letters = {
     "E": 1
 }
 
-print(scrabble_score("BAD", letters)
+print(scrabble_score("BAD", letters))
